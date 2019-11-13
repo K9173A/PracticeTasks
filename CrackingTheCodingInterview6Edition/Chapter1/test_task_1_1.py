@@ -9,18 +9,18 @@ from .task_1_1 import quick_sort, consists_of_unique_chars
 
 class TestQuickSort(unittest.TestCase):
     """
-    Set of tests checking quick_sort() function.
+    Набор тестов проверяющих поведение функции quick_sort().
     """
     def test_empty_list(self):
         """
-        Test that quick_sort can handle empty list.
+        Тестовый случай с пустым списком.
         """
         result = quick_sort([])
         self.assertEqual(result, [])
 
     def test_regular_list(self):
         """
-        Test case for the list with characters.
+        Тестовый случай с обычным списоком из различных символов.
         """
         result = quick_sort(['b', 't', '2', 'f', 'a', 'E', 'e'])
         self.assertEqual(result, ['2', 'E', 'a', 'b', 'e', 'f', 't'])
@@ -28,12 +28,11 @@ class TestQuickSort(unittest.TestCase):
 
 class TestHasUniqueChars(unittest.TestCase):
     """
-    Set of tests checking consists_of_unique_chars() function.
+    Набор тестов проверяющих поведение функции consists_of_unique_chars().
     """
     def test_unique_string(self):
         """
-        Test case for the string with unique characters.
-        Function should return True.
+        Тестовый случай для строки с уникальными символами.
         """
         sorted_string = ''.join(
             quick_sort(['b', 't', '2', 'f', 'a', 'E', 'e'])
@@ -43,8 +42,7 @@ class TestHasUniqueChars(unittest.TestCase):
 
     def test_repeated_string(self):
         """
-        Test case for the string with repeated characters.
-        Function should return False.
+        Тестовый случай для строки с повторяющимися символами.
         """
         sorted_string = ''.join(
             quick_sort(['b', 'c', 'g', 'e', 'e', 'e'])
