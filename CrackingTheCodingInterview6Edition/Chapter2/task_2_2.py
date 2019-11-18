@@ -20,13 +20,3 @@ def find_node(linked_list, n):
     for i, node in enumerate(linked_list):
         if i == index:
             return node
-
-
-if __name__ == '__main__':
-    letters = LinkedList()
-    letters.add_node(Node('A'))
-    letters.add_node(Node('B'))
-    letters.add_node(Node('C'))
-    letters.add_node(Node('D'))
-    letters.add_node(Node('E'))
-    print(find_node(letters, 2).data)

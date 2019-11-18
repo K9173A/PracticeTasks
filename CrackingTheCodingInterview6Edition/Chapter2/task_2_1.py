@@ -37,22 +37,3 @@ def remove_duplicates(linked_list):
                 previous_node = node
         current_node = current_node.next_node
     return linked_list
-
-
-if __name__ == '__main__':
-    letters = LinkedList()
-    letters.add_node(Node('A'))
-    letters.add_node(Node('B'))
-    letters.add_node(Node('A'))
-    letters.add_node(Node('A'))
-    letters.add_node(Node('A'))
-    letters.add_node(Node('A'))
-    letters.add_node(Node('A'))
-    letters.add_node(Node('A'))
-    letters.add_node(Node('C'))
-    letters.add_node(Node('D'))
-    letters.add_node(Node('D'))
-    letters.add_node(Node('A'))
-
-    for n in remove_duplicates(letters):
-        print(n.data)
