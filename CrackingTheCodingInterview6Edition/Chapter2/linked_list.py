@@ -66,6 +66,13 @@ class LinkedList:
             # После этого перезаписываем в текущий нод следующий нод.
             current_node = current_node.next_node
 
+    def __len__(self):
+        """
+        Вычисляет длину связного списка.
+        :return: длина связного списка.
+        """
+        return sum(1 for _ in self)
+
     def clear(self):
         """
         Очищает связный список от нодов.
