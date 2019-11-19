@@ -2,7 +2,7 @@
 Напишите код, разбивающий связный список вокруг значения x, так чтобы все узлы,
 меньшие x, оказались перед узлами, большими или равными x.
 """
-from linked_list import Node, LinkedList
+from linked_list import Node
 
 
 def distribute_nodes(linked_list, x):
