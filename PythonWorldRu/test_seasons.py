@@ -18,6 +18,9 @@ class TestSeason(unittest.TestCase):
         self.assertEqual(season(5), 'Spring')
 
     def test_invalid_month_number(self):
+        """
+        Тестовый случай с неверным значением месяца.
+        """
         with self.assertRaises(ValueError):
             season(77)
 
