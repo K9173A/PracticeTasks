@@ -90,8 +90,6 @@ my_str_1 = '{my_named_var}'.format(my_named_var=42) # "42"
 ```python
 number = 23.8589578
 print('{:.2f}'.format(number)) # 23.86 
-print('{:.3f}'.format(number)) # 23.859
-print('{:.4f}'.format(number)) # 23.8590 
 ```
 В свежих версиях Python появились f-строки:
 ```python

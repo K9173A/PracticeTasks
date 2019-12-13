@@ -50,3 +50,52 @@ simple_set = set(['h', 'e', 'l', 'l', 'o'])
 ```python
 simple_frozenset = frozenset('qwerty')
 ```
+
+### `collections.namedtuple`
+#### Название
+Именованный кортеж.
+#### Описание
+Сам `namedtuple()` представляет из себя фабрику по производству простых классов.
+Классу можно задать имя и поля.
+#### Пример
+```python
+Point = namedtuple('Point', ['x', 'y'])
+point = Point(x=11, y=22)
+```
+
+### `collections.deque`
+#### Название
+Двусвязная очередь.
+#### Описание
+Генерализация стэка и очереди. Является потокобезопасной, эффективной по памяти при
+удалениии и добавлении.
+#### Пример
+```python
+import collections
+simple_deque = collections.deque(['f', 'g', 'h', 'i', 'j'])
+```
+
+### `collections.OrderedDict`
+#### Название
+Упорядоченный словарь.
+#### Описание
+С версии Python 3.7 можно не использовать, так как возможность стандартного `dict` помнить последовательность вставки
+элементов гарантируется.
+#### Пример
+```python
+import collections
+simple_dict = collections.OrderedDict()
+simple_dict['a'] = 1
+```
+
+### `collections.defaultdict`
+#### Название
+Дефолт-Словарь.
+#### Описание
+Ничем не отличается от обычного словаря за исключением того, что по умолчанию всегда вызывается функция, возвращающая
+значение.
+#### Пример
+```python
+import collections
+simple_dict = collections.defaultdict(int, a=10, b=12, c=13)
+```
