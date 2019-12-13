@@ -1,4 +1,3 @@
-# Python
 ## Типы данных
 
 ### `int`
@@ -119,9 +118,7 @@ my_var = None
 Если у функции нет `return None`, то он в любом случае будет возвращён.
 ```python
 def foo():
-    print('Hello World')
+    pass
 
-
-var_foo = foo()
-print(var_foo)
+print(foo()) # None
 ```
