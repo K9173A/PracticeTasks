@@ -8,7 +8,7 @@
 `1` - символизация, что что-то происходит. Вызов функции мы в любом случае делаем, поэтому не 0, а 1.
 
 ### Пример 1
-```
+```java
 int sum(int n) {
     if (n == 1) {
         return 1;
@@ -22,7 +22,7 @@ int sum(int n) {
 * Если `n = 100` => `100` раз.
 
 ### Пример 2
-```
+```java
 int pairSumSequence(int n) {
     int sum = 0;
     for (int i =0; i < n; i++) {
@@ -49,7 +49,7 @@ int pairSum(int a, int b) {
 
 ## Какой код быстрее?
 Первый:
-```
+```java
 int min = Integer.MAX_VALUE;
 int max = Integer.MIN_VALUE;
 for (int x : array) {
@@ -58,7 +58,7 @@ for (int x : array) {
 }
 ```
 Второй:
-```
+```java
 int min = Integer.MAX_VALUE;
 int max = Integer.MIN_VALUE;
 for (int x : array) {
@@ -89,7 +89,7 @@ for (int x : array) {
 * `O(N^2 + B)= O(N^2 + B)` - выражение не может быть упрощено, так как мы ничего не знаем о `B`.
 
 ## Сложение и умножение
-```
+```java
 for (int a : arrA) { print(a); }
 for (int b : arrB) { print(b); }
 ```
@@ -112,7 +112,7 @@ for (int a : arrA) {
 * Основание логарифма не играет роли, так как константа, поэтому: `O(k) = O(log N)`.
 * **Вывод:** для каждого алгоритма, где на каждой итерации берётся половина элементов - сложность будет включать `O(log N)`.
 
-```
+```java
 void printPairs(int[] arr) {
     for (int i = 0; i < arr.length; i++) {
         for (int j = i; j < arr.length; j++) {
@@ -129,7 +129,7 @@ void printPairs(int[] arr) {
 ## Примеры
 ### Пример 1
 Исходный код:
-```
+```java
 void printPairs(int[] arrA, int[] arrB) {
     for (int i = 0; i < arrA.length; i++) {
         for (int j =0; j < arrB.length; j++) {
@@ -141,7 +141,7 @@ void printPairs(int[] arrA, int[] arrB) {
 }
 ```
 Псевдокод:
-```
+```java
 void printPairs(arrA, arrB) {
     for // A раз
         for // B раз
@@ -155,7 +155,7 @@ void printPairs(arrA, arrB) {
 
 ### Пример 2
 Функция сортирует строки в массиве строк, а затем сортирует массив. Исходный код:
-```
+```java
 void sortStr(string[] arr) {
     for (int i = 0; i < arr.length; i++) {
         arr[i] = sortString(arr[i]);
@@ -164,7 +164,7 @@ void sortStr(string[] arr) {
 }
 ```
 Псевдо код:
-```
+```java
 void sortStr(arr) {
     for { // N раз
         sortString() // L * log L раз
@@ -177,7 +177,7 @@ void sortStr(arr) {
 
 #### N3
 Исходный код:
-```
+```java
 void reverse(int[] arr) {
     for (int i =0; i < arr.length / 2; i++) {
         int other = arr.length - i - 1;
@@ -188,7 +188,7 @@ void reverse(int[] arr) {
 }
 ```
 Псевдо код:
-```
+```java
 void reverse(arr) {
     for // N / 2 раз
 }
