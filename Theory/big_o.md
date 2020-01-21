@@ -173,9 +173,12 @@ void sortStr(arr) {
 }
 ```
 
-* Общая сложность будет равна: `O(N * L * log L + L * N * log N) = O(L * N * (log L + log N))`
+* Общая сложность будет равна:
+```
+O(N * L * log L + L * N * log N) = O(L * N * (log L + log N))
+```
 
-#### N3
+### Пример 3
 Исходный код:
 ```java
 void reverse(int[] arr) {
