@@ -133,3 +133,25 @@ INNER JOIN regions
 
 ### `FULL OUTER JOIN`
 Выборка данных из обеих таблиц. Противоположность `INNER JOIN`.
+
+### `UNION`
+Объединение результатов запросов. Должно быть одинаковое количество столбцов. Принцип действия:
+
+1. Выдаётся результат по первому запросу.
+2. Выдаётся результат по второму запросу.
+3. Результаты склеиваются.
+
+```mysql
+SELECT * FROM departments
+UNION
+SELECT emp_no, title FROM titles;
+```
+
+### `UNION ALL`
+Используется, чтобы убрать дубликаты.
+```mysql
+SELECT * FROM departments
+UNION ALL
+SELECT emp_no, title FROM titles;
+```
+
